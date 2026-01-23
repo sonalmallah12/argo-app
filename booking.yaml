@@ -4,10 +4,10 @@ metadata:
   name: bookinfo-helm
   namespace: argocd
 spec:
-  project: default
+  project: sample-project
 
   source:
-    repoURL: https://github.com/sonalmallah12/argo-app.git
+    repoURL: https://github.com/<your-username>/argo-app.git
     targetRevision: main
     path: helm/bookinfo
     helm:
