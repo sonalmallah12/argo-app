@@ -2,12 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: bookinfo-helm
-  namespace: argocd
+  namespace: bookinfo
 spec:
   project: sample-project
 
   source:
-    repoURL: https://github.com/<your-username>/argo-app.git
+    repoURL: https://github.com/sonalmallah12/argo-app.git
     targetRevision: main
     path: helm/bookinfo
     helm:
